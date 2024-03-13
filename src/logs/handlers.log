@@ -1,0 +1,64 @@
+2024-03-11 19:00:16,691 [INFO] Start polling
+2024-03-11 19:00:16,766 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 19:00:33,250 [INFO] Update id=65357802 is not handled. Duration 0 ms by bot id=6704900384
+2024-03-11 19:00:33,250 [ERROR] Cause exception while process update id=65357802 by bot id=6704900384
+AttributeError: 'NoneType' object has no attribute 'info'
+Traceback (most recent call last):
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\src\utils\handlers.py", line 33, in message_handler
+    logger.info(f"{msg.from_user.id} - {msg}")
+    ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'info'
+2024-03-11 19:00:38,172 [INFO] Polling stopped
+2024-03-11 19:00:38,352 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 19:00:46,107 [INFO] Start polling
+2024-03-11 19:00:46,189 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 19:00:50,142 [INFO] Polling stopped
+2024-03-11 19:00:50,313 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'

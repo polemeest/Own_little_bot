@@ -1,0 +1,445 @@
+2024-03-11 18:43:17,586 [INFO] Start polling
+2024-03-11 18:43:17,671 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 18:43:53,852 [INFO] Update id=65357796 is not handled. Duration 14 ms by bot id=6704900384
+2024-03-11 18:44:08,107 [INFO] Polling stopped
+2024-03-11 18:44:08,362 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 18:51:52,113 [INFO] Start polling
+2024-03-11 18:51:52,219 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 18:51:56,597 [INFO] Update id=65357797 is handled. Duration 360 ms by bot id=6704900384
+2024-03-11 18:52:03,004 [INFO] Update id=65357798 is handled. Duration 109 ms by bot id=6704900384
+2024-03-11 18:53:50,333 [INFO] Update id=65357799 is handled. Duration 327 ms by bot id=6704900384
+2024-03-11 18:53:57,098 [INFO] Polling stopped
+2024-03-11 18:53:57,360 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 18:54:05,112 [INFO] Start polling
+2024-03-11 18:54:05,190 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 18:54:08,923 [INFO] Update id=65357800 is not handled. Duration 0 ms by bot id=6704900384
+2024-03-11 18:54:08,924 [ERROR] Cause exception while process update id=65357800 by bot id=6704900384
+TypeError: 'int' object is not callable
+Traceback (most recent call last):
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\src\utils\handlers.py", line 24, in message_handler
+    logging.INFO(f"{msg.from_user.id} - {msg}")
+TypeError: 'int' object is not callable
+2024-03-11 18:54:53,146 [INFO] Polling stopped
+2024-03-11 18:54:53,291 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 18:55:20,351 [INFO] Start polling
+2024-03-11 18:55:20,428 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 18:55:26,688 [INFO] 1122869980 - message_id=123 date=datetime.datetime(2024, 3, 11, 14, 55, 26, tzinfo=TzInfo(UTC)) chat=Chat(id=1122869980, type='private', title=None, username='polemeest', first_name='Denis', last_name='Chibirev', is_forum=None, photo=None, active_usernames=None, available_reactions=None, accent_color_id=None, background_custom_emoji_id=None, profile_accent_color_id=None, profile_background_custom_emoji_id=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, unrestrict_boost_count=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, has_visible_history=None, sticker_set_name=None, can_set_sticker_set=None, custom_emoji_sticker_set_name=None, linked_chat_id=None, location=None) message_thread_id=None from_user=User(id=1122869980, is_bot=False, first_name='Denis', last_name='Chibirev', username='polemeest', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None) sender_chat=None sender_boost_count=None forward_origin=None is_topic_message=None is_automatic_forward=None reply_to_message=None external_reply=None quote=None reply_to_story=None via_bot=None edit_date=None has_protected_content=None media_group_id=None author_signature=None text='тык' entities=None link_preview_options=None animation=None audio=None document=None photo=None sticker=None story=None video=None video_note=None voice=None caption=None caption_entities=None has_media_spoiler=None contact=None dice=None game=None poll=None venue=None location=None new_chat_members=None left_chat_member=None new_chat_title=None new_chat_photo=None delete_chat_photo=None group_chat_created=None supergroup_chat_created=None channel_chat_created=None message_auto_delete_timer_changed=None migrate_to_chat_id=None migrate_from_chat_id=None pinned_message=None invoice=None successful_payment=None users_shared=None chat_shared=None connected_website=None write_access_allowed=None passport_data=None proximity_alert_triggered=None boost_added=None forum_topic_created=None forum_topic_edited=None forum_topic_closed=None forum_topic_reopened=None general_forum_topic_hidden=None general_forum_topic_unhidden=None giveaway_created=None giveaway=None giveaway_winners=None giveaway_completed=None video_chat_scheduled=None video_chat_started=None video_chat_ended=None video_chat_participants_invited=None web_app_data=None reply_markup=None forward_date=None forward_from=None forward_from_chat=None forward_from_message_id=None forward_sender_name=None forward_signature=None user_shared=None
+2024-03-11 18:55:27,053 [INFO] Update id=65357801 is handled. Duration 358 ms by bot id=6704900384
+2024-03-11 18:56:26,826 [INFO] Polling stopped
+2024-03-11 18:56:27,080 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 19:01:14,385 [INFO] Start polling
+2024-03-11 19:01:14,464 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 19:03:03,965 [INFO] Update id=65357803 is handled. Duration 563 ms by bot id=6704900384
+2024-03-11 19:03:21,265 [INFO] Update id=65357804 is handled. Duration 265 ms by bot id=6704900384
+2024-03-11 19:05:41,533 [INFO] Polling stopped
+2024-03-11 19:05:41,797 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:21:48,522 [INFO] Start polling
+2024-03-11 20:21:48,633 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:21:54,085 [INFO] Update id=65357805 is not handled. Duration 0 ms by bot id=6704900384
+2024-03-11 20:21:54,086 [ERROR] Cause exception while process update id=65357805 by bot id=6704900384
+TypeError: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\src\utils\handlers.py", line 35, in message_handler
+    await msg.answer(f"{texts["main"]["give_id"]}")
+                        ~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2024-03-11 20:22:33,154 [INFO] Polling stopped
+2024-03-11 20:22:33,407 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:22:37,059 [INFO] Start polling
+2024-03-11 20:22:37,136 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:22:40,134 [INFO] Update id=65357806 is handled. Duration 328 ms by bot id=6704900384
+2024-03-11 20:23:12,765 [INFO] Polling stopped
+2024-03-11 20:23:13,017 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:23:22,672 [INFO] Start polling
+2024-03-11 20:23:22,757 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:23:25,417 [INFO] Update id=65357807 is handled. Duration 358 ms by bot id=6704900384
+2024-03-11 20:24:56,445 [INFO] Polling stopped
+2024-03-11 20:24:56,702 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:25:03,357 [INFO] Start polling
+2024-03-11 20:25:03,434 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 20:25:05,925 [INFO] Update id=65357808 is handled. Duration 391 ms by bot id=6704900384
+2024-03-11 21:03:33,218 [INFO] Polling stopped
+2024-03-11 21:03:33,476 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:04:29,123 [INFO] Start polling
+2024-03-11 21:04:29,202 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:04:40,519 [INFO] Update id=65357809 is handled. Duration 327 ms by bot id=6704900384
+2024-03-11 21:04:43,712 [INFO] Update id=65357810 is handled. Duration 108 ms by bot id=6704900384
+2024-03-11 21:05:04,807 [INFO] Update id=65357811 is handled. Duration 718 ms by bot id=6704900384
+2024-03-11 21:05:11,292 [INFO] Polling stopped
+2024-03-11 21:05:11,437 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:05:21,357 [INFO] Start polling
+2024-03-11 21:05:21,435 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:05:26,509 [INFO] Update id=65357812 is not handled. Duration 0 ms by bot id=6704900384
+2024-03-11 21:05:36,875 [INFO] Update id=65357813 is handled. Duration 516 ms by bot id=6704900384
+2024-03-11 21:06:03,912 [INFO] Polling stopped
+2024-03-11 21:06:04,170 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:06:07,564 [INFO] Start polling
+2024-03-11 21:06:07,642 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:06:11,785 [INFO] Update id=65357814 is handled. Duration 342 ms by bot id=6704900384
+2024-03-11 21:06:14,581 [INFO] Update id=65357815 is handled. Duration 108 ms by bot id=6704900384
+2024-03-11 21:06:50,177 [INFO] Polling stopped
+2024-03-11 21:06:50,442 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:15:37,364 [INFO] Start polling
+2024-03-11 21:15:37,445 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:15:43,116 [INFO] Update id=65357816 is handled. Duration 328 ms by bot id=6704900384
+2024-03-11 21:17:14,389 [INFO] Polling stopped
+2024-03-11 21:17:14,651 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:17:18,064 [INFO] Start polling
+2024-03-11 21:17:18,146 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:17:23,775 [INFO] Update id=65357817 is handled. Duration 360 ms by bot id=6704900384
+2024-03-11 21:17:26,815 [INFO] Update id=65357818 is handled. Duration 391 ms by bot id=6704900384
+2024-03-11 21:17:32,879 [INFO] Polling stopped
+2024-03-11 21:17:33,135 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:17:53,137 [INFO] Start polling
+2024-03-11 21:17:53,238 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:18:15,207 [INFO] Update id=65357819 is not handled. Duration 0 ms by bot id=6704900384
+2024-03-11 21:18:15,208 [ERROR] Cause exception while process update id=65357819 by bot id=6704900384
+TypeError: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\src\utils\handlers.py", line 31, in start_handler
+    await msg.answer(texts['main']['greeting'])
+                     ~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2024-03-11 21:19:06,674 [INFO] Polling stopped
+2024-03-11 21:19:06,938 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:19:13,249 [INFO] Start polling
+2024-03-11 21:19:13,325 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-11 21:20:10,476 [INFO] Update id=65357820 is handled. Duration 843 ms by bot id=6704900384
+2024-03-11 21:20:34,630 [INFO] Update id=65357821 is handled. Duration 1812 ms by bot id=6704900384
+2024-03-11 21:20:40,949 [INFO] Update id=65357822 is handled. Duration 108 ms by bot id=6704900384
+2024-03-11 21:20:48,520 [INFO] Update id=65357823 is handled. Duration 187 ms by bot id=6704900384
+2024-03-11 21:21:41,484 [INFO] Polling stopped
+2024-03-11 21:21:41,633 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-12 18:53:14,015 [INFO] Start polling
+2024-03-12 18:53:14,101 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-12 18:53:21,659 [INFO] Polling stopped
+2024-03-12 18:53:21,923 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 16:58:52,794 [INFO] Start polling
+2024-03-13 16:58:52,919 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 16:59:34,594 [INFO] started conversation with user 1122869980
+2024-03-13 16:59:35,015 [INFO] Update id=65357824 is handled. Duration 421 ms by bot id=6704900384
+2024-03-13 16:59:52,287 [INFO] Polling stopped
+2024-03-13 16:59:52,544 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 16:59:57,540 [INFO] Start polling
+2024-03-13 16:59:57,659 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:00:02,216 [INFO] started conversation with user 1122869980
+2024-03-13 17:00:02,790 [INFO] Update id=65357825 is handled. Duration 578 ms by bot id=6704900384
+2024-03-13 17:00:17,133 [INFO] Polling stopped
+2024-03-13 17:00:17,388 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:00:22,097 [INFO] Start polling
+2024-03-13 17:00:22,227 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:00:25,411 [INFO] started conversation with user 1122869980
+2024-03-13 17:00:25,885 [INFO] Update id=65357826 is handled. Duration 468 ms by bot id=6704900384
+2024-03-13 17:02:31,073 [INFO] Polling stopped
+2024-03-13 17:02:31,328 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:02:36,200 [INFO] Start polling
+2024-03-13 17:02:36,324 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:02:41,633 [INFO] started conversation with user 1122869980
+2024-03-13 17:02:42,201 [INFO] Update id=65357827 is handled. Duration 562 ms by bot id=6704900384
+2024-03-13 17:03:00,830 [INFO] Polling stopped
+2024-03-13 17:03:01,083 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:03:05,046 [INFO] Start polling
+2024-03-13 17:03:05,201 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:03:07,865 [INFO] started conversation with user 1122869980
+2024-03-13 17:03:08,498 [INFO] Update id=65357828 is handled. Duration 640 ms by bot id=6704900384
+2024-03-13 17:04:57,875 [INFO] Polling stopped
+2024-03-13 17:04:58,140 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:05:02,845 [INFO] Start polling
+2024-03-13 17:05:02,997 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:05:07,258 [INFO] started conversation with user 1122869980
+2024-03-13 17:05:07,800 [INFO] Update id=65357829 is handled. Duration 546 ms by bot id=6704900384
+2024-03-13 17:05:35,565 [INFO] Polling stopped
+2024-03-13 17:05:35,824 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:05:40,536 [INFO] Start polling
+2024-03-13 17:05:41,137 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:05:41,603 [INFO] started conversation with user 1122869980
+2024-03-13 17:05:42,394 [INFO] Update id=65357830 is handled. Duration 797 ms by bot id=6704900384
+2024-03-13 17:23:28,754 [INFO] Polling stopped
+2024-03-13 17:23:29,017 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:24:40,140 [INFO] Start polling
+2024-03-13 17:24:40,220 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 17:24:43,057 [INFO] Update id=65357832 is handled. Duration 311 ms by bot id=6704900384
+2024-03-13 17:57:10,557 [INFO] Polling stopped
+2024-03-13 17:57:10,820 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:08:23,765 [INFO] Start polling
+2024-03-13 18:08:23,850 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:08:27,860 [INFO] started conversation with user 1122869980
+2024-03-13 18:08:28,162 [INFO] Update id=65357834 is handled. Duration 296 ms by bot id=6704900384
+2024-03-13 18:08:33,140 [INFO] Update id=65357835 is handled. Duration 125 ms by bot id=6704900384
+2024-03-13 18:08:44,116 [INFO] Polling stopped
+2024-03-13 18:08:44,368 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:09:01,725 [INFO] Start polling
+2024-03-13 18:09:01,806 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:09:07,356 [INFO] started conversation with user 1122869980
+2024-03-13 18:09:07,646 [INFO] Update id=65357836 is handled. Duration 296 ms by bot id=6704900384
+2024-03-13 18:09:09,321 [INFO] Update id=65357837 is handled. Duration 141 ms by bot id=6704900384
+2024-03-13 18:09:27,405 [INFO] Polling stopped
+2024-03-13 18:09:27,670 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:09:31,237 [INFO] Start polling
+2024-03-13 18:09:31,319 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:09:44,824 [INFO] started conversation with user 1122869980
+2024-03-13 18:09:45,161 [INFO] Update id=65357838 is handled. Duration 342 ms by bot id=6704900384
+2024-03-13 18:10:14,582 [INFO] Polling stopped
+2024-03-13 18:10:14,834 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:12:05,481 [INFO] Start polling
+2024-03-13 18:12:05,567 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:12:14,665 [INFO] started conversation with user 1122869980
+2024-03-13 18:12:14,951 [INFO] Update id=65357839 is handled. Duration 282 ms by bot id=6704900384
+2024-03-13 18:12:52,081 [INFO] Polling stopped
+2024-03-13 18:12:52,347 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:14:42,011 [INFO] Start polling
+2024-03-13 18:14:42,093 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:15:18,108 [INFO] Polling stopped
+2024-03-13 18:15:18,369 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:15:21,776 [INFO] Start polling
+2024-03-13 18:15:21,857 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:15:30,647 [INFO] started conversation with user 1122869980
+2024-03-13 18:15:31,008 [INFO] Update id=65357840 is handled. Duration 359 ms by bot id=6704900384
+2024-03-13 18:15:32,736 [INFO] Update id=65357841 is handled. Duration 344 ms by bot id=6704900384
+2024-03-13 18:17:29,748 [INFO] Polling stopped
+2024-03-13 18:17:30,013 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:17:34,612 [INFO] Start polling
+2024-03-13 18:17:34,693 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:17:38,997 [INFO] started conversation with user 1122869980
+2024-03-13 18:17:39,256 [INFO] Update id=65357842 is not handled. Duration 265 ms by bot id=6704900384
+2024-03-13 18:17:39,257 [ERROR] Cause exception while process update id=65357842 by bot id=6704900384
+TelegramBadRequest: Telegram server says - Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+Traceback (most recent call last):
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\utils\chat_action.py", line 356, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\src\utils\handlers.py", line 26, in start_handler
+    await msg.answer(f"""{texts[0].get('main').get('greeting')}
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\client\bot.py", line 492, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\client\session\aiohttp.py", line 178, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "E:\programming\TG_bots\First_Ravnica_Bot\env\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+2024-03-13 18:32:49,274 [INFO] Polling stopped
+2024-03-13 18:32:49,533 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:40:06,341 [INFO] Start polling
+2024-03-13 18:40:06,438 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 18:40:10,747 [INFO] started conversation with user 1122869980
+2024-03-13 18:40:11,103 [INFO] Update id=65357843 is handled. Duration 359 ms by bot id=6704900384
+2024-03-13 18:40:14,369 [INFO] Update id=65357844 is handled. Duration 140 ms by bot id=6704900384
+2024-03-13 19:16:00,137 [INFO] Polling stopped
+2024-03-13 19:16:00,393 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 19:18:02,848 [INFO] Start polling
+2024-03-13 19:18:02,932 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 19:18:06,184 [INFO] checking admin 1122869980
+2024-03-13 19:18:06,821 [INFO] Update id=65357846 is handled. Duration 640 ms by bot id=6704900384
+2024-03-13 19:40:36,441 [INFO] Polling stopped
+2024-03-13 19:40:36,698 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 19:41:57,522 [INFO] Start polling
+2024-03-13 19:41:57,605 [INFO] Run polling for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
+2024-03-13 19:42:01,803 [INFO] checking admin 1122869980
+2024-03-13 19:42:02,122 [INFO] Update id=65357847 is handled. Duration 313 ms by bot id=6704900384
+2024-03-13 19:42:06,762 [INFO] started conversation with user 1122869980
+2024-03-13 19:42:06,875 [INFO] Update id=65357848 is handled. Duration 125 ms by bot id=6704900384
+2024-03-13 19:42:20,760 [INFO] checking admin 1122869980
+2024-03-13 19:42:20,940 [INFO] Update id=65357849 is handled. Duration 188 ms by bot id=6704900384
+2024-03-13 19:42:24,185 [INFO] Update id=65357850 is handled. Duration 155 ms by bot id=6704900384
+2024-03-13 19:44:41,858 [INFO] Polling stopped
+2024-03-13 19:44:42,000 [INFO] Polling stopped for bot @polemeest_test_bot id=6704900384 - 'Ravnica_first_bot'
